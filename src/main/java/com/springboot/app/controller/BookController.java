@@ -42,10 +42,10 @@ public class BookController {
 		return bookServ.posting(book);
 	}
 
-	@DeleteMapping("/remove")
-	public BookEntity deleteBook(@RequestBody BookEntity book) {
+	@DeleteMapping("/remove/{key}")
+	public int deleteBook(@PathVariable("key") int key) {
 
-		return bookServ.deleting(book);
+		return bookServ.deleting(key);
 	}
 	
 	

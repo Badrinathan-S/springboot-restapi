@@ -33,11 +33,11 @@ public class BookService {
 		
 	}
 	
-	public BookEntity deleting(BookEntity book){
+	public int deleting(int  bookId){
 		
-		bookRepo.deleteById(book.getBookId());
+		bookRepo.deleteById(bookId);
 		
-		return book;
+		return bookId;
 	}
 	
 }
