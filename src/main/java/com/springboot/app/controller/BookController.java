@@ -18,7 +18,7 @@ import com.springboot.app.entity.BookEntity;
 import com.springboot.app.service.BookService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://react-restapi-5a849.web.app")
 public class BookController {
 
 	@Autowired
