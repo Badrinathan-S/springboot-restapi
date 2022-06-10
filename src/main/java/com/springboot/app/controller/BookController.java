@@ -23,6 +23,12 @@ public class BookController {
 
 	@Autowired
 	BookService bookServ;
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public List<BookEntity> Home() {
+
+		return bookServ.gettingAll();
+	}
 
 	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public List<BookEntity> checkPage() {
